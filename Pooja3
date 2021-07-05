@@ -1,0 +1,19 @@
+import hashlib 
+
+  
+# initializing string 
+
+str2hash = "GeeksforGeeks"
+
+  
+# encoding GeeksforGeeks using encode() 
+# then sending to sha224() 
+
+result = hashlib.sha224(str2hash.encode()) 
+
+  
+# printing the equivalent hexadecimal value. 
+
+print("The hexadecimal equivalent of hash is : ", end ="") 
+
+print(result.hexdigest())
